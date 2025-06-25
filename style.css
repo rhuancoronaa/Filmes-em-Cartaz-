@@ -1,4 +1,3 @@
-/* Estilo base do corpo da página com fundo em gradiente animado */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,14 +9,12 @@ body {
   position: relative;
 }
 
-/* Animação do fundo para efeito de movimento no gradiente */
 @keyframes gradientBackground {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Cabeçalho com fundo semitransparente e alinhamento centralizado */
 header {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
@@ -26,7 +23,6 @@ header {
   z-index: 2;
 }
 
-/* Campo de busca centralizado com bordas arredondadas */
 #searchInput {
   padding: 0.5rem;
   width: 60%;
@@ -35,15 +31,6 @@ header {
   border: none;
 }
 
-/* Estilo dos filtros de seleção (avaliação, ano, popularidade) */
-#filters select {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 6px;
-  border: none;
-}
-
-/* Container principal dos cards de filmes com layout responsivo */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +40,6 @@ main {
   z-index: 2;
 }
 
-/* Estilo individual dos cards dos filmes */
 .movie-card {
   background-color: rgba(0, 0, 0, 0.6);
   margin: 1rem;
@@ -64,41 +50,17 @@ main {
   z-index: 2;
 }
 
-/* Imagem do filme com cantos arredondados */
 .movie-card img {
   width: 100%;
   border-radius: 8px;
 }
 
-/* Estilo do botão de "ver detalhes" */
-.movie-card button {
-  margin-top: 10px;
-  background-color: #0af;
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 6px;
-  cursor: pointer;
+.movie-card a {
+  color: #0af;
+  text-decoration: none;
 }
 
-/* Área que exibe sinopse, elenco e trailer */
-.movie-details {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: left;
-}
-
-/* Player do trailer responsivo com cantos arredondados */
-iframe {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-/* Estilo dos personagens decorativos no fundo */
+/* Personagens animados */
 .character {
   position: absolute;
   width: 80px;
@@ -106,14 +68,13 @@ iframe {
   z-index: 1;
 }
 
-/* Animação do personagem indo da esquerda para a direita */
 @keyframes moveLeftRight {
   0% { left: -100px; }
   100% { left: 110%; }
 }
 
-/* Animação do personagem indo da direita para a esquerda */
 @keyframes moveRightLeft {
   0% { left: 110%; }
   100% { left: -100px; }
 }
+
